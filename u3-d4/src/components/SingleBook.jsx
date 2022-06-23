@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Form, Button } from "react-bootstrap"
+import CommentArea from './CommentArea'
 
 
 
@@ -22,31 +23,7 @@ class SingleBook extends Component {
                     </Card.Body>
                 </Card>
                 {this.state.selected ? (
-                    <Form>
-                        <Form.Group>
-                            <Form.Label>Write your Comments here</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                rows={3}
-                            ></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Rating</Form.Label>
-                            <Form.Control
-                                as="select"
-
-                            >
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                
-                            </Form.Control>
-                        </Form.Group>
-
-                        <Button variant="primary" type="submit">
-                            Submit
-                        </Button>
-                    </Form>
+                    <CommentArea />
                 ) : (
                     <h4>No comments to display </h4>
                 )}
