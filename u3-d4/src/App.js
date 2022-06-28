@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <header className='App=header'>
-        <WarningSign text="Watch out!"/>
-        <MyBadge text="NEW!" color="info"/>
+        {/* <WarningSign text="Watch out!"/>
+        <MyBadge text="NEW!" color="info"/> */}
         {/* <SingleBook book={fantasyBooks[0]}/> */}
         <BookList books={fantasyBooks} />
 
